@@ -1,3 +1,8 @@
+---
+title: Content Importer Privacy Policy
+description: What Content Importer reads from Pinterest and YouTube, what it stores, and how to revoke access.
+---
+
 # Content Importer: Privacy Policy
 
 Last updated: November 3, 2026
