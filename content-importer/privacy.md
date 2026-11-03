@@ -1,13 +1,13 @@
 ---
 title: Content Importer Privacy Policy
-description: What Content Importer reads from Pinterest and YouTube, what it stores, and how to revoke access.
+description: What Content Importer reads from Pinterest, YouTube and TikTok, what it stores, and how to revoke access.
 ---
 
 # Content Importer: Privacy Policy
 
 Last updated: November 3, 2026
 
-Content Importer is a personal, non-commercial tool that lets you browse content you have saved on platforms such as Pinterest and YouTube, pick items, and send references to those items into another app you use (for example a personal wardrobe or recipe app). This policy explains what data it accesses and what happens to it.
+Content Importer is a personal, non-commercial tool that lets you browse content you have saved on platforms such as Pinterest, YouTube and TikTok, pick items, and send references to those items into another app you use (for example a personal wardrobe or recipe app). This policy explains what data it accesses and what happens to it.
 
 ## What it accesses
 
@@ -15,6 +15,7 @@ Only after you choose to connect an account, and only with read-only permissions
 
 - **Pinterest:** your profile name, your boards, and the Pins on your boards (scopes `user_accounts:read`, `boards:read`, `pins:read`).
 - **YouTube:** your playlists, playlist items and liked videos (scope `youtube.readonly`).
+- **TikTok:** your display name and the public videos you have posted, including their titles, descriptions, cover images and links (scopes `user.info.basic`, `video.list`).
 
 Content Importer never posts, edits, deletes, follows or saves anything on your accounts, and it never asks for your password. You sign in on the platform's own page.
 
@@ -37,13 +38,15 @@ Data is used only to show you your own content so you can choose what to import.
 
 ## Your choices
 
-You can disconnect an account at any time from within the app. You can also revoke access on the platform itself, in the list of connected apps in your Pinterest settings or in your Google Account's third-party connections: <https://myaccount.google.com/connections>. If content is deleted on the original platform, references to it should be removed from the receiving app as well.
+You can disconnect an account at any time from within the app. You can also revoke access on the platform itself, in the list of connected apps in your Pinterest or TikTok settings, or in your Google Account's third-party connections: <https://myaccount.google.com/connections>. If content is deleted on the original platform, references to it should be removed from the receiving app as well.
 
 ## Children
 
 Content Importer is not directed to children under 13 and does not knowingly process their data.
 
 ## Changes
+
+See also the [Terms of Service](terms.html).
 
 If this policy changes, the date above will be updated and the change will be visible in this site's public history.
 

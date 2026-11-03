@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Content Importer: returning to the app</title>
+  </head>
+  <body style="font: 16px/1.5 system-ui, sans-serif; max-width: 560px; margin: 64px auto; padding: 0 20px">
+    <p id="status">Returning you to Content Importer…</p>
+    <script>
+      // TikTok only allows https redirect URIs, but Content Importer's connector service runs
+      // locally. This page forwards only the OAuth result (code, state, error) to that local
+      // service, which verifies the state and exchanges the code using its private secret.
+      (function () {
+        var incoming = new URLSearchParams(window.location.search);
+        var outgoing = new URLSearchParams();
+        ['code', 'state', 'error', 'error_description', 'scopes'].forEach(function (key) {
+          var value = incoming.get(key);
+          if (value !== null) outgoing.set(key, value);
+        });
+        if (!outgoing.has('state')) {
+          document.getElementById('status').textContent =
+            'This page is only used while connecting TikTok to Content Importer. You can close it.';
+          return;
+        }
+        window.location.replace('http://127.0.0.1:5173/api/sources/tiktok/callback?' + outgoing.toString());
+      })();
+    </script>
+  </body>
+</html>
