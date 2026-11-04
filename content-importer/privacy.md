@@ -16,6 +16,8 @@ Only after you choose to connect an account, and only with read-only permissions
 - **Pinterest:** your profile name, your boards, and the Pins on your boards (scopes `user_accounts:read`, `boards:read`, `pins:read`).
 - **YouTube:** your playlists, playlist items and liked videos (scope `youtube.readonly`).
 - **TikTok:** your display name and the public videos you have posted, including their titles, descriptions, cover images and links (scopes `user.info.basic`, `video.list`).
+- **Your TikTok data export (optional):** if you choose to import the file TikTok gives you from "Download your data", it is read in your browser. Only the links and dates of your liked and favorite videos are kept; messages, login history, location and everything else in the file are discarded and never uploaded.
+- **Public video links:** to show titles and thumbnails for links you paste or import, the video links (and nothing else) are sent to TikTok's public oEmbed service or the YouTube Data API. No account access is used for this.
 
 Content Importer never posts, edits, deletes, follows or saves anything on your accounts, and it never asks for your password. You sign in on the platform's own page.
 
